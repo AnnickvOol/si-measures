@@ -18,6 +18,17 @@ Citing this work
 If you find this work useful in your research, please consider citing:
 
 ```
+@inproceedings{deprelle2019learning,
+  title={Learning elementary structures for 3D shape generation and matching},
+  author={Deprelle, Theo and Groueix, Thibault and Fisher, Matthew and Kim, Vladimir and Russell, Bryan and Aubry, Mathieu},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={7433--7443},
+  year={2019}
+}
+```
+
+
+```
 @article{Bauer2023,
   title={Talk the green talk: a textual analysis of pension funds' disclosures.},
   author={Bauer, Rob and Broeders, Dirk and van Ool, Annick},
