@@ -25,7 +25,6 @@ If you find this work useful in your research, please consider citing:
   year={2023},
   publisher={DNB}
 }
-
 ```
 
 # Install
@@ -40,7 +39,6 @@ cd si-measures
 conda create --name nlp-si python=3.8
 source activate nlp-si
 pip install -r requirements.txt
-
 ```
 
 # Create catalog with files
