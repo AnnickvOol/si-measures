@@ -1,0 +1,38 @@
+*.pyc
+*#
+.#*
+__pycache__/*
+.DS_Store
+*_venv
+*.diff
+nosetests.xml
+.idea/*
+*.egg
+*.egg-info/*
+.filing_cache
+.xbrl_rss_cache
+www.sec.gov
+notebooks/temp/*
+notebooks/*.log
+notebooks/.ipynb_checkpoints/*
+
+*.egg-info/
+*.egg
+
+*.log
+
+.tox/
+build/
+dist/
+
+# exclude data
+/data
+
+#exclude results
+/results
+
+#exclude old files
+/old_files
+
+#exclude BERT model
+/BERT_model
