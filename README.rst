@@ -6,55 +6,45 @@ Features
 --------
 
 The si-measures repository contains the source code for the paper Talk the green talk: a textual analysis of pension funds' disclosures.
+(link)
 
 Abstract:
 In this paper, we analyze the disclosures of sustainable investing by Dutch pension funds in their annual reports from 2016 to 2021. We introduce a novel textual analysis approach using state-of-the-art natural language processing (NLP) techniques to measure the awareness and implementation of sustainable investing, where we define awareness as the amount of attention paid to sustainable investing in the annual report. We exploit a proprietary dataset to analyze the relation between pension fund characteristics and sustainable investing. We find that a pension fund's size increases both the awareness and the implementation of sustainable investing. Moreover, we analyze the role of signing the International Responsible Business Conduct (IRBC) initiative. Large pension funds, pension funds with more female trustees or pension funds with a positive belief about the risk-return relation of sustainable investing are more likely to sign the IRBC initiative. Although signing this initiative increases the specificity of pension fund statements about sustainable investing, we do not find an effect on the implementation of sustainable investing.
 
 This repository contains the source code to calculate the five sustainable-investment measures that quantify the awareness and implementation of sustainabe investing.
 
-Citing this work
---------
+Installation
+------------
 
-If you find this work useful in your research, please consider citing:
+Clone the repo and install the dependencies
 
-@article{Bauer2023,
-  title={Talk the green talk: a textual analysis of pension funds' disclosures.},
-  author={Bauer, Rob and Broeders, Dirk and van Ool, Annick},
-  journal={DNB Working Paper Series},
-  number={...},
-  year={2023},
-  publisher={DNB}
-}
+::
 
+    git clone https://github.com/AnnickvOol/si-measures.git
+    cd si-measures
 
-# Install
+Create Python environment with relevant packages
 
-### Clone the repo and install dependencies 
+::
 
-
-## Download the repository
-git clone https://github.com/AnnickvOol/si-measures.git
-cd si-measures
-## Create python env with relevant packages
-conda create --name nlp-si python=3.8
-source activate nlp-si
-pip install -r requirements.txt
+    conda create --name nlp-si python=3.8
+    source activate nlp-si
+    pip install -r requirements.txt
 
 
-# Create catalog with files
+How to run
+----------
 
+Select relevant files and create catalog with all files
 
+::
 
-# Extracting relevant sentences
+    python select_relevant_files.py
+    python create_catalog.py
+    
+Convert pdf files to naf files
 
-We use a dictionary with SI-related keywords and combinations of keywords to extract all SI-related sentences using a lemmatized key-word search. 
+::
 
-# Training BERT model
-
-We train a BERT model ....
-
-
-
-
-## License
-
+    python convert_pdfs_naf.py
+   
