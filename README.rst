@@ -17,7 +17,6 @@ Citing this work
 
 If you find this work useful in your research, please consider citing:
 
-```
 @article{Bauer2023,
   title={Talk the green talk: a textual analysis of pension funds' disclosures.},
   author={Bauer, Rob and Broeders, Dirk and van Ool, Annick},
@@ -26,13 +25,13 @@ If you find this work useful in your research, please consider citing:
   year={2023},
   publisher={DNB}
 }
-```
+
 
 # Install
 
 ### Clone the repo and install dependencies 
 
-```shell
+
 ## Download the repository
 git clone https://github.com/AnnickvOol/si-measures.git
 cd si-measures
@@ -40,7 +39,7 @@ cd si-measures
 conda create --name nlp-si python=3.8
 source activate nlp-si
 pip install -r requirements.txt
-```
+
 
 # Create catalog with files
 
