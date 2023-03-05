@@ -25,8 +25,11 @@ notebooks/.ipynb_checkpoints/*
 build/
 dist/
 
-# exclude data
-/data
+# exclude data (excluding input data)
+/data/downloads
+/data/naf_files
+/data/output
+/data/models
 
 #exclude results
 /results

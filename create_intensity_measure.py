@@ -1,9 +1,7 @@
 import pandas as pd
 import nafigator
-import ast
 import os
 from os.path import join
-from typing import Union
 from dnbnlp_genfun import dnbnlp_utils as dnu
 from dnbnlp_genfun import find_signals
 import time
@@ -16,9 +14,9 @@ STANZA_DATA_PATH = join('data','naf_files','')
 start_time = time.time()
 
 #Import catalog
-df_catalog = pd.read_excel(OUTPUT_DATA_PATH + 'df_catalog_v2.xlsx',index_col=0)
+df_catalog = pd.read_excel(OUTPUT_DATA_PATH + 'df_catalog.xlsx',index_col=0)
 #Import sentences
-df = pd.read_excel(OUTPUT_DATA_PATH + 'df_results_mvb_big_sen_pred.xlsx',index_col=0)
+df = pd.read_excel(OUTPUT_DATA_PATH + 'df_results_mvb_big_prediction.xlsx',index_col=0)
 df = df[df.prediction==1]
 
 dfr = pd.DataFrame()
