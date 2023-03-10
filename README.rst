@@ -47,4 +47,21 @@ Convert pdf files to naf files
 ::
 
     python convert_pdfs_naf.py
+    
+Extract all SI-related sentences from the naf files
+
+::
+
+    select_relevant_sentences.py
+
+.... add training BERT model + instruction Bertopic......
+
+Calculate the sustainable-investment measures
    
+::
+
+    create_intensity_measure.py
+    create_variety_measure.py
+    create_specificity_measure.py
+    create_spectrum_measure.py
+    create_scope_measure.py
