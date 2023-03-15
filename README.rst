@@ -54,7 +54,17 @@ Extract all SI-related sentences from the naf files
 
     select_relevant_sentences.py
 
-.... add training BERT model + instruction Bertopic......
+We finetune a trained BERT model using labeled datasets for two classification tasks: determining whether a sentence is SI-related or not and determining whether a paragraph is specific or not.
+
+::
+    
+    Finetune BERT model.ipynb
+
+One of the SI measures makes use of the output of BERTopic. In the following notebook latent topics are extracted from the set of SI-related sentences.
+
+::
+
+    Topic modelling BERTopic.ipynb
 
 Calculate the sustainable-investment measures
    
