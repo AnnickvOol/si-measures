@@ -42,7 +42,7 @@ Select relevant files and create catalog with all files
     python select_relevant_files.py
     python create_catalog.py
     
-Documents are processed by parsing them to NLP Annotation Format (NAF) files containing all relevant NLP information. We use the nafigator package for this (<https://github.com/DeNederlandscheBank/nafigator>).
+Documents are processed by parsing them to NLP Annotation Format (NAF) files containing all relevant NLP information. We use the nafigator package for this (https://github.com/DeNederlandscheBank/nafigator).
 
 ::
 
