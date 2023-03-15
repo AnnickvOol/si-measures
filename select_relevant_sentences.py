@@ -1,13 +1,13 @@
-#Required environment: nlpold
-
 import pandas as pd
 import nafigator
 import ast
 import os
 from os.path import join
+import sys
+sys.path.append(os.getcwd())
 from typing import Union
-from dnbnlp_genfun import dnbnlp_utils as dnu
-from dnbnlp_genfun import find_signals
+import find_signals
+import dnbnlp_utils as dnu
 import time
 import stanza
 
@@ -50,19 +50,3 @@ df_output.to_excel(OUTPUT_DATA_PATH + 'df_results_mvb_big.xlsx')
 #df_output.to_excel(OUTPUT_DATA_PATH + 'df_results_methods.xlsx')
 
 print("--- %s seconds ---" % (time.time() - start_time))
-
-
-#df_signal_defs = dnu.SignalDataframeFormatter(signal_df=df_signal_defs,nlp_engine=nlp,use_case='research').lemmatize_dataframe(cols_to_adjust)
-#df_signal_defs = dnu.SignalDataframeFormatter(signal_df=df_signal_defs,nlp_engine=nlp,use_case='research').lowercase_dataframe(cols_to_adjust)
-#df_output = find_signals.SignalFinder(df_signal_defs=df_signal_defs,use_case='research',params = {'print_progress':True, 'unpivot':True},rw_sql=False).search_naf_files_for_signals(df_catalog)
-
-# # select the relevant signals based on document type
-#df_signal_defs = df_signal_defs[df_signal_defs['dc:type'].str.contains(DOC_TYPE, regex=False, case=False)]
-
-#Only select pension funds that have all docs
-#list_pf = []
-#for pf in df_catalog['dc:creator'].unique():
-#    temp = df_catalog[df_catalog['dc:creator']==pf]
-    #if all(element in list(temp['dc:type']) for element in docs):
-    #    list_pf = list_pf + [pf]
-#df_catalog = df_catalog[(df_catalog['dc:creator'].isin(list_pf))&(df_catalog['dc:type'].isin(docs))]
