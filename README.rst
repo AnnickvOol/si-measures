@@ -5,8 +5,8 @@ si-measures
 Features
 --------
 
-The si-measures repository contains the source code for the paper Talk the green talk: a textual analysis of pension funds' disclosures.
-(link)
+The si-measures repository contains the source code for the paper Walk the green talk? A textual analysis of pension funds' disclosures.
+(https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4391708)
 
 Abstract:
 In this paper, we analyze the disclosures of sustainable investing by Dutch pension funds in their annual reports from 2016 to 2021. We introduce a novel textual analysis approach using state-of-the-art natural language processing (NLP) techniques to measure the awareness and implementation of sustainable investing, where we define awareness as the amount of attention paid to sustainable investing in the annual report. We exploit a proprietary dataset to analyze the relation between pension fund characteristics and sustainable investing. We find that a pension fund's size increases both the awareness and the implementation of sustainable investing. Moreover, we analyze the role of signing the International Responsible Business Conduct (IRBC) initiative. Large pension funds, pension funds with more female trustees or pension funds with a positive belief about the risk-return relation of sustainable investing are more likely to sign the IRBC initiative. Although signing this initiative increases the specificity of pension fund statements about sustainable investing, we do not find an effect on the implementation of sustainable investing.
